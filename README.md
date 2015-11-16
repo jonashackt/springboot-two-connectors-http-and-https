@@ -1,4 +1,7 @@
 # springboot-two-connectors-http-and-https
+[![Build Status](https://travis-ci.org/jonashackt/springboot-two-connectors-http-and-https.svg?branch=master)](https://travis-ci.org/jonashackt/springboot-two-connectors-http-and-https)
+[![Coverage Status](https://coveralls.io/repos/jonashackt/springboot-two-connectors-http-and-https/badge.svg)](https://coveralls.io/r/jonashackt/springboot-two-connectors-http-and-https)
+
 Show how to implement two Connectors within Spring Boot´s embedded Tomcat
 
 As sometimes it could be necessary to implement a SSL-Connection within your SpringBoot App, but you additionally want to communicate through http only, you need to configure Spring Boot´s embedded Tomcat to run with two Connectors - one for https and one with http.
