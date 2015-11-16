@@ -1,11 +1,11 @@
 package de.jonashackt.springboot;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.boot.test.WebIntegrationTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -15,7 +15,7 @@ import de.jonashackt.springboot.web.DemoController;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = TwoConnectorsHttpAndHttpsApplication.class)
-@WebAppConfiguration
+@WebIntegrationTest
 public class TwoConnectorsHttpAndHttpsApplicationTests {
 
     private RestTemplate restTemplate = new RestTemplate();
